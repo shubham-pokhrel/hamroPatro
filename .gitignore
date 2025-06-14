@@ -3,13 +3,16 @@
 
 # Logs
 logs/
+utils/logs/
 *.log
 
 # Node modules
 node_modules/
 
-# Database files (optional - remove if you want to track the DB)
+# Database files (SQLite)
 *.db
+*.db-shm
+*.db-wal
 *.sqlite
 *.sqlite3
 
