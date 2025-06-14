@@ -293,7 +293,7 @@ class DatabaseManager {
       `);
 
       console.log('✅ Database schema initialized successfully');
-      console.log('Schema includes: users, products, orders with full constraints and triggers');
+      console.log('Schema includes: users, products and orders');
       
     } catch (error) {
       console.error('❌ Database initialization failed:', error.message);
