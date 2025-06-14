@@ -5,7 +5,17 @@ A simple REST API for managing users, products, and orders. Built with Node.js, 
 ## Quick Start
 
 ```bash
+# Clone the repository
+git clone https://github.com/shubham-pokhrel/hamroPatro.git
+cd order-management-api
+
+# Install dependencies
 npm install
+
+# Set up environment variables
+cp .env.example .env
+
+# Start the server
 npm start
 ```
 
