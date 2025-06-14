@@ -1,0 +1,52 @@
+{
+  "name": "order-management-api",
+  "version": "1.2.0",
+  "description": "Production-ready Order Management System REST API with comprehensive features",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js --ignore *.db",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "db:reset": "rm -f *.db && node scripts/resetDb.js",
+    "logs": "tail -f logs/app.log"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "sqlite3",
+    "rest-api",
+    "order-management",
+    "inventory",
+    "ecommerce"
+  ],
+  "author": "Shubham",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6",
+    "express-rate-limit": "^7.1.5",
+    "helmet": "^7.1.0",
+    "cors": "^2.8.5",
+    "winston": "^3.11.0",
+    "joi": "^17.11.0",
+    "bcrypt": "^5.1.1",
+    "jsonwebtoken": "^9.0.2",
+    "express-validator": "^7.0.1",
+    "compression": "^1.7.4",
+    "morgan": "^1.10.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3",
+    "eslint": "^8.55.0",
+    "prettier": "^3.1.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
